@@ -1,4 +1,10 @@
 import './lib/lib';
+import $ from './lib/lib';
 
 
-$('div').hide().show();
+$('button').setAttribute('id', 'button');
+$('button').getAttribute('id');
+
+
+
+
