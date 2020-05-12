@@ -12,7 +12,7 @@ $('div').click(function(){
 
 // console.log($('div').eq(2).find('.some'));
 // console.log($('.active').closest('.findme').addClass('fsdf'));
-console.log($('.findme').siblings().addClass('active'));
+console.log($('.findme').fadeOut(1800));
 
 
 
