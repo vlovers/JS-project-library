@@ -1,0 +1,15 @@
+.inside{
+   width: 1440px;
+   margin: 0 auto;
+   padding: 0 0;
+   max-width: 100%;
+}
+
+.flex{
+   display: flex;
+}
+
+.flex-center {
+   display: flex;
+   justify-content: space-between;
+}

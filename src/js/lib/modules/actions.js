@@ -24,6 +24,17 @@ $.prototype.eq = function (i) {
    return this;
 };
 
+$.prototype.index = function () {
+   const parent = this[0].parentNode;
+   const childs = [...parent.children];
+
+   const findMyIndex = (item) => {
+      return item == this[0];
+   };
+
+   return childs.findIndex(findMyIndex);
+};
+
 $.prototype.find = function (selector) {
    let numberOfItems = 0;
    let counter = 0;

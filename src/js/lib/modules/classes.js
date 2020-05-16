@@ -32,4 +32,15 @@ $.prototype.toggleClass = function (classNames) {
 
    return this;
 };
+
+$.prototype.contains = function (classNames) {
+   for (let i = 0; i < this.length; i++) {
+      if (!this[i].classList) {
+         continue;
+      }
+      this[i].classList.contains(classNames);
+   }
+
+   return this;
+};
 export default $;
